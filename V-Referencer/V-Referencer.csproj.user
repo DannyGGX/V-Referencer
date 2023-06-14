@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="FormBlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLearnMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormOnlineImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormOnlineSound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormOwnDrawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormOwnPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormReferencingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVideoGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormWebsite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormYouTubeVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

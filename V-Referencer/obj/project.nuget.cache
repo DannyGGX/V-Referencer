@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "A5KLCoJo2fcW/Mhem7WkYSlJz2gOgjA5xOehTtJhEt6QeviTlE2w95lo4u/SasSPRNXz/OWlHZqhq0EIuZKeyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Main\\source\\repos\\V-Referencer\\V-Referencer\\V-Referencer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Main\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Main\\.nuget\\packages\\selenium.support\\4.10.0\\selenium.support.4.10.0.nupkg.sha512",
+    "C:\\Users\\Main\\.nuget\\packages\\selenium.webdriver\\4.10.0\\selenium.webdriver.4.10.0.nupkg.sha512",
+    "C:\\Users\\Main\\.nuget\\packages\\selenium.webdriver.chromedriver\\113.0.5672.6300\\selenium.webdriver.chromedriver.113.0.5672.6300.nupkg.sha512"
+  ],
+  "logs": []
+}
