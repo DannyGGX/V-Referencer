@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Support;
-
-// Instead of using Selenium, download the webpage temporariliy to scrape off the info with HtmlAgility
 
 namespace V_Referencer
 {
@@ -22,43 +19,6 @@ namespace V_Referencer
             ScrapeYouTube();
         }
         private Webscraper webscraper;
-
-        //private static IWebDriver Driver { get; set; }
-        //private WebDriverWait Wait { get; set; }
-
-        //private void InitialiseChromeDriver(string url)
-        //{
-        //    try
-        //    {
-        //        var service = ChromeDriverService.CreateDefaultService();
-        //        service.HideCommandPromptWindow = true; // Does this do anything?
-        //        var options = new ChromeOptions();
-        //        options.AddArguments("--window-position=-32000,-32000", "mute-audio"); // hide browser and mute audio
-        //        Driver = new ChromeDriver(options);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //       // Driver.Quit();
-        //        MessageBox.Show(e.Message, "Browser Driver failed to start"); // maybe need to update package
-        //        //return;
-        //    }
-        //    try
-        //    {
-        //        Driver.Navigate().GoToUrl(url);
-        //    }
-        //    catch (WebDriverArgumentException)
-        //    {
-        //        Driver.Quit();
-        //        MessageBox.Show("Invalid Link");
-        //        return;
-        //    }
-
-        //    // Explicit wait to ensure that the relavent elements are loaded before reading them.
-        //    int timeout = 50000; // Maximum wait time of 50 seconds
-        //    Wait = new WebDriverWait(Driver, TimeSpan.FromMilliseconds(timeout));
-        //    ScrapeYouTube();
-
-        //}
 
         private void ScrapeYouTube()
         {

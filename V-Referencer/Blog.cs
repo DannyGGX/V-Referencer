@@ -44,5 +44,17 @@ namespace V_Referencer
                 return $"{Name} ({PublishDate.Year})";
             }
         }
+
+        public string CreateInTextEnd(bool authorNameNeedFormatting = false)
+        {
+            if (authorNameNeedFormatting)
+            {
+                return $"({Surname}, {PublishDate.Year})";
+            }
+            else
+            {
+                return $"({Name}, {PublishDate.Year})";
+            }
+        }
     }
 }

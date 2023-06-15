@@ -25,6 +25,7 @@ namespace V_Referencer
 
             controller = new UIController();
             rtxtInText.Font = controller.NormalFont;
+            rtxtInTextEnd.Font = controller.NormalFont;
         }
 
         private void btnConvertHarvard_Click(object sender, EventArgs e)
@@ -58,6 +59,7 @@ namespace V_Referencer
             controller.ResetCopyButtons(btnCopyInText, btnCopyReference);
             rtxtReference.Clear();
             rtxtInText.Clear();
+            rtxtInTextEnd.Clear();
 
             publisher = txtPublisher.Text;
             title = txtTitle.Text;
@@ -68,6 +70,7 @@ namespace V_Referencer
 
             WriteFormattedText(rtxtReference, sound.BeforeItalics, sound.Italics, sound.AfterItalics);
             rtxtInText.Text = sound.CreateInText();
+            rtxtInTextEnd.Text = sound.CreateInTextEnd();
         }
         private void WriteFormattedText(RichTextBox rtxt, string beforeItalics, string italics, string afterItalics)
         {
@@ -79,6 +82,11 @@ namespace V_Referencer
         private void txtPublishYear_Validated(object sender, EventArgs e)
         {
             controller.YearValidation(txtPublishYear);
+        }
+
+        private void btnCopyInTextEnd_Click(object sender, EventArgs e)
+        {
+            controller.Copy(rtxtInTextEnd, btnCopyInTextEnd);
         }
 
         private void btnCopyReference_Click(object sender, EventArgs e)

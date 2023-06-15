@@ -22,6 +22,7 @@ namespace V_Referencer
 
             controller = new UIController();
             rtxtInText.Font = controller.NormalFont;
+            rtxtInTextStart.Font = controller.NormalFont;
 
             for(int i = 0; i < Enum.GetValues(typeof(VideoGame.Websites)).Length; i++)
             {
@@ -62,6 +63,7 @@ namespace V_Referencer
             //Clear
             controller.ResetCopyButtons(btnCopyInText, btnCopyReference);
             rtxtInText.Clear();
+            rtxtInTextStart.Clear();
             rtxtReference.Clear();
 
             CreateCitation(videoGame);
@@ -79,7 +81,8 @@ namespace V_Referencer
 
             videoGame.CreateCitation();
             controller.WriteFormattedText(rtxtReference, videoGame.BeforeItalics, videoGame.Italics, videoGame.AfterItalics);
-            rtxtInText.Text = videoGame.InTextNotPerson;
+            rtxtInText.Text = videoGame.InTextNoSurnameSentenceEnd;
+            rtxtInTextStart.Text = videoGame.InTextNoSurnameSentenceStart;
         }
 
         private void btnFindCity_Click(object sender, EventArgs e)
@@ -131,6 +134,11 @@ namespace V_Referencer
         private void btnCopyInText_Click(object sender, EventArgs e)
         {
             controller.Copy(rtxtInText, btnCopyInText);
+        }
+
+        private void btnInTextStart_Click(object sender, EventArgs e)
+        {
+            controller.Copy(rtxtInTextStart, btnInTextStart);
         }
     }
 }

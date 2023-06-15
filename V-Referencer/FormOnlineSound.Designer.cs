@@ -47,6 +47,9 @@
             this.btnConvertHarvard = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.panelCitation = new System.Windows.Forms.Panel();
+            this.btnCopyInTextEnd = new System.Windows.Forms.Button();
+            this.rtxtInTextEnd = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnCopyInText = new System.Windows.Forms.Button();
             this.rtxtInText = new System.Windows.Forms.RichTextBox();
             this.lblInText = new System.Windows.Forms.Label();
@@ -241,6 +244,9 @@
             // 
             // panelCitation
             // 
+            this.panelCitation.Controls.Add(this.btnCopyInTextEnd);
+            this.panelCitation.Controls.Add(this.rtxtInTextEnd);
+            this.panelCitation.Controls.Add(this.label7);
             this.panelCitation.Controls.Add(this.btnCopyInText);
             this.panelCitation.Controls.Add(this.rtxtInText);
             this.panelCitation.Controls.Add(this.lblInText);
@@ -250,8 +256,36 @@
             this.panelCitation.Controls.Add(this.lblCitation);
             this.panelCitation.Location = new System.Drawing.Point(3, 809);
             this.panelCitation.Name = "panelCitation";
-            this.panelCitation.Size = new System.Drawing.Size(1326, 400);
+            this.panelCitation.Size = new System.Drawing.Size(1326, 489);
             this.panelCitation.TabIndex = 6;
+            // 
+            // btnCopyInTextEnd
+            // 
+            this.btnCopyInTextEnd.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnCopyInTextEnd.Location = new System.Drawing.Point(969, 380);
+            this.btnCopyInTextEnd.Name = "btnCopyInTextEnd";
+            this.btnCopyInTextEnd.Size = new System.Drawing.Size(109, 60);
+            this.btnCopyInTextEnd.TabIndex = 39;
+            this.btnCopyInTextEnd.Text = "Copy";
+            this.btnCopyInTextEnd.UseVisualStyleBackColor = false;
+            this.btnCopyInTextEnd.Click += new System.EventHandler(this.btnCopyInTextEnd_Click);
+            // 
+            // rtxtInTextEnd
+            // 
+            this.rtxtInTextEnd.Location = new System.Drawing.Point(52, 380);
+            this.rtxtInTextEnd.Name = "rtxtInTextEnd";
+            this.rtxtInTextEnd.Size = new System.Drawing.Size(911, 60);
+            this.rtxtInTextEnd.TabIndex = 38;
+            this.rtxtInTextEnd.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(52, 345);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(283, 32);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "In-text (end of sentence):";
             // 
             // btnCopyInText
             // 
@@ -277,9 +311,9 @@
             this.lblInText.AutoSize = true;
             this.lblInText.Location = new System.Drawing.Point(52, 225);
             this.lblInText.Name = "lblInText";
-            this.lblInText.Size = new System.Drawing.Size(89, 32);
+            this.lblInText.Size = new System.Drawing.Size(398, 32);
             this.lblInText.TabIndex = 37;
-            this.lblInText.Text = "In-text:";
+            this.lblInText.Text = "In-text (start or middle of sentence):";
             // 
             // btnCopyReference
             // 
@@ -366,5 +400,8 @@
         private RichTextBox rtxtReference;
         private Label lblReference;
         private Label lblCitation;
+        private Button btnCopyInTextEnd;
+        private RichTextBox rtxtInTextEnd;
+        private Label label7;
     }
 }

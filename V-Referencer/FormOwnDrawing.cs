@@ -31,6 +31,7 @@ namespace V_Referencer
             rtxtListOfFigures.Font =    controller.NormalFont;
             rtxtReference.Font =        controller.NormalFont;
             rtxtInTextReference.Font =  controller.NormalFont;
+            rtxtInTextStart.Font = controller.NormalFont;
             checkBoxFigureNum.Checked = true;
 
             if (save.SpecificSaveExists((int)SaveSettings.Data.Username))
@@ -63,6 +64,8 @@ namespace V_Referencer
             rtxtFigure.Clear();
             rtxtListOfFigures.Clear();
             rtxtReference.Clear();
+            rtxtInTextStart.Clear();
+            rtxtInTextReference.Clear();
 
             name = txtYourName.Text;
             title = rtxtReferenceTitle.Text;
@@ -104,7 +107,8 @@ namespace V_Referencer
             rtxtReference.Text = drawing.BeforeItalics;
 
             // In-text
-            rtxtInTextReference.Text = drawing.InTextPerson;
+            rtxtInTextReference.Text = drawing.InTextPersonSentenceEnd;
+            rtxtInTextStart.Text = drawing.InTextPersonSentenceStart;
 
             groupBoxCitation.Visible = true;
         }
@@ -138,6 +142,11 @@ namespace V_Referencer
         private void btnCopyInText_Click(object sender, EventArgs e)
         {
             controller.Copy(rtxtInTextReference, btnCopyInText);
+        }
+
+        private void btnCopyInTextStart_Click(object sender, EventArgs e)
+        {
+            controller.Copy(rtxtInTextStart, btnCopyInTextStart);
         }
 
         private void txtYear_Validated(object sender, EventArgs e)

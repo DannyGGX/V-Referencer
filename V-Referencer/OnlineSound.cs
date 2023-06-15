@@ -26,5 +26,9 @@ namespace V_Referencer
         {
             return $"{Name} ({PublishYear})";
         }
+        public string CreateInTextEnd()
+        {
+            return $"({Name}, {PublishYear})";
+        }
     }
 }

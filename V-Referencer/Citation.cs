@@ -69,14 +69,18 @@ namespace V_Referencer
         public string Italics { get; set; }
         public string AfterItalics { get; set; }
 
-        public string InTextPerson 
+        public string InTextPersonSentenceEnd 
         { 
             get
             {
                 return $"({Surname}, {PublishYear})";
             } 
         }
-        public string InTextNotPerson
+        public string InTextPersonSentenceStart
+        {
+            get { return $"{Surname} ({PublishYear})"; }
+        }
+        public string InTextNoSurnameSentenceEnd
         {
             get
             {
@@ -86,6 +90,16 @@ namespace V_Referencer
                 {
                     return $"({Name}, {PublishYear})";
                 }
+            }
+        }
+        public string InTextNoSurnameSentenceStart
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(Name))
+                    return $"{WebsiteName} ({PublishYear})";
+                else
+                    return $"{Name} ({PublishYear})";
             }
         }
 

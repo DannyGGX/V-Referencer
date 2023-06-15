@@ -60,6 +60,9 @@
             this.rtxtReference = new System.Windows.Forms.RichTextBox();
             this.lblReference = new System.Windows.Forms.Label();
             this.lblCitation = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnInTextStart = new System.Windows.Forms.Button();
+            this.rtxtInTextStart = new System.Windows.Forms.RichTextBox();
             this.panelPrimaryInput.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelCitation.SuspendLayout();
@@ -296,8 +299,11 @@
             // 
             // panelCitation
             // 
+            this.panelCitation.Controls.Add(this.btnInTextStart);
+            this.panelCitation.Controls.Add(this.rtxtInTextStart);
             this.panelCitation.Controls.Add(this.btnCopyInText);
             this.panelCitation.Controls.Add(this.rtxtInText);
+            this.panelCitation.Controls.Add(this.label10);
             this.panelCitation.Controls.Add(this.lblInText);
             this.panelCitation.Controls.Add(this.btnCopyReference);
             this.panelCitation.Controls.Add(this.rtxtReference);
@@ -306,13 +312,13 @@
             this.panelCitation.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCitation.Location = new System.Drawing.Point(0, 807);
             this.panelCitation.Name = "panelCitation";
-            this.panelCitation.Size = new System.Drawing.Size(1188, 349);
+            this.panelCitation.Size = new System.Drawing.Size(1188, 468);
             this.panelCitation.TabIndex = 2;
             // 
             // btnCopyInText
             // 
             this.btnCopyInText.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnCopyInText.Location = new System.Drawing.Point(941, 265);
+            this.btnCopyInText.Location = new System.Drawing.Point(941, 375);
             this.btnCopyInText.Name = "btnCopyInText";
             this.btnCopyInText.Size = new System.Drawing.Size(109, 60);
             this.btnCopyInText.TabIndex = 43;
@@ -322,7 +328,7 @@
             // 
             // rtxtInText
             // 
-            this.rtxtInText.Location = new System.Drawing.Point(24, 265);
+            this.rtxtInText.Location = new System.Drawing.Point(24, 375);
             this.rtxtInText.Name = "rtxtInText";
             this.rtxtInText.Size = new System.Drawing.Size(911, 60);
             this.rtxtInText.TabIndex = 42;
@@ -331,11 +337,11 @@
             // lblInText
             // 
             this.lblInText.AutoSize = true;
-            this.lblInText.Location = new System.Drawing.Point(24, 230);
+            this.lblInText.Location = new System.Drawing.Point(24, 340);
             this.lblInText.Name = "lblInText";
-            this.lblInText.Size = new System.Drawing.Size(89, 32);
+            this.lblInText.Size = new System.Drawing.Size(283, 32);
             this.lblInText.TabIndex = 44;
-            this.lblInText.Text = "In-text:";
+            this.lblInText.Text = "In-text (end of sentence):";
             // 
             // btnCopyReference
             // 
@@ -373,6 +379,34 @@
             this.lblCitation.Size = new System.Drawing.Size(97, 32);
             this.lblCitation.TabIndex = 38;
             this.lblCitation.Text = "Citation";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(24, 227);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(398, 32);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "In-text (start or middle of sentence):";
+            // 
+            // btnInTextStart
+            // 
+            this.btnInTextStart.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnInTextStart.Location = new System.Drawing.Point(941, 262);
+            this.btnInTextStart.Name = "btnInTextStart";
+            this.btnInTextStart.Size = new System.Drawing.Size(109, 60);
+            this.btnInTextStart.TabIndex = 46;
+            this.btnInTextStart.Text = "Copy";
+            this.btnInTextStart.UseVisualStyleBackColor = false;
+            this.btnInTextStart.Click += new System.EventHandler(this.btnInTextStart_Click);
+            // 
+            // rtxtInTextStart
+            // 
+            this.rtxtInTextStart.Location = new System.Drawing.Point(24, 262);
+            this.rtxtInTextStart.Name = "rtxtInTextStart";
+            this.rtxtInTextStart.Size = new System.Drawing.Size(911, 60);
+            this.rtxtInTextStart.TabIndex = 45;
+            this.rtxtInTextStart.Text = "";
             // 
             // FormVideoGame
             // 
@@ -428,5 +462,8 @@
         private Label lblCitation;
         private TextBox txtYear;
         private Label label9;
+        private Button btnInTextStart;
+        private RichTextBox rtxtInTextStart;
+        private Label label10;
     }
 }

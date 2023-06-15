@@ -56,6 +56,9 @@
             this.btnCopyFigure = new System.Windows.Forms.Button();
             this.rtxtFigure = new System.Windows.Forms.RichTextBox();
             this.lblFigure = new System.Windows.Forms.Label();
+            this.btnCopyInTextStart = new System.Windows.Forms.Button();
+            this.rtxtInTextStart = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericSelectFigure)).BeginInit();
             this.groupBoxCitation.SuspendLayout();
@@ -224,6 +227,9 @@
             // 
             // groupBoxCitation
             // 
+            this.groupBoxCitation.Controls.Add(this.btnCopyInTextStart);
+            this.groupBoxCitation.Controls.Add(this.rtxtInTextStart);
+            this.groupBoxCitation.Controls.Add(this.label4);
             this.groupBoxCitation.Controls.Add(this.btnCopyInText);
             this.groupBoxCitation.Controls.Add(this.rtxtInTextReference);
             this.groupBoxCitation.Controls.Add(this.label2);
@@ -239,7 +245,7 @@
             this.groupBoxCitation.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBoxCitation.Location = new System.Drawing.Point(0, 487);
             this.groupBoxCitation.Name = "groupBoxCitation";
-            this.groupBoxCitation.Size = new System.Drawing.Size(1164, 737);
+            this.groupBoxCitation.Size = new System.Drawing.Size(1164, 855);
             this.groupBoxCitation.TabIndex = 26;
             this.groupBoxCitation.TabStop = false;
             this.groupBoxCitation.Text = "Citation";
@@ -247,7 +253,7 @@
             // btnCopyInText
             // 
             this.btnCopyInText.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnCopyInText.Location = new System.Drawing.Point(967, 651);
+            this.btnCopyInText.Location = new System.Drawing.Point(967, 779);
             this.btnCopyInText.Name = "btnCopyInText";
             this.btnCopyInText.Size = new System.Drawing.Size(109, 60);
             this.btnCopyInText.TabIndex = 12;
@@ -257,7 +263,7 @@
             // 
             // rtxtInTextReference
             // 
-            this.rtxtInTextReference.Location = new System.Drawing.Point(63, 651);
+            this.rtxtInTextReference.Location = new System.Drawing.Point(63, 779);
             this.rtxtInTextReference.Name = "rtxtInTextReference";
             this.rtxtInTextReference.Size = new System.Drawing.Size(898, 60);
             this.rtxtInTextReference.TabIndex = 16;
@@ -266,11 +272,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 601);
+            this.label2.Location = new System.Drawing.Point(63, 729);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 32);
+            this.label2.Size = new System.Drawing.Size(283, 32);
             this.label2.TabIndex = 35;
-            this.label2.Text = "In-text Reference: ";
+            this.label2.Text = "In-text (end of sentence):";
             // 
             // btnCopyReference
             // 
@@ -356,6 +362,34 @@
             this.lblFigure.TabIndex = 24;
             this.lblFigure.Text = "Figure:";
             // 
+            // btnCopyInTextStart
+            // 
+            this.btnCopyInTextStart.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnCopyInTextStart.Location = new System.Drawing.Point(967, 652);
+            this.btnCopyInTextStart.Name = "btnCopyInTextStart";
+            this.btnCopyInTextStart.Size = new System.Drawing.Size(109, 60);
+            this.btnCopyInTextStart.TabIndex = 36;
+            this.btnCopyInTextStart.Text = "Copy";
+            this.btnCopyInTextStart.UseVisualStyleBackColor = false;
+            this.btnCopyInTextStart.Click += new System.EventHandler(this.btnCopyInTextStart_Click);
+            // 
+            // rtxtInTextStart
+            // 
+            this.rtxtInTextStart.Location = new System.Drawing.Point(63, 652);
+            this.rtxtInTextStart.Name = "rtxtInTextStart";
+            this.rtxtInTextStart.Size = new System.Drawing.Size(898, 60);
+            this.rtxtInTextStart.TabIndex = 37;
+            this.rtxtInTextStart.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(63, 602);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(398, 32);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "In-text (start or middle of sentence):";
+            // 
             // FormOwnDrawing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -404,5 +438,8 @@
         private Label lblFigure;
         private NumericUpDown numericSelectFigure;
         private Label label3;
+        private Button btnCopyInTextStart;
+        private RichTextBox rtxtInTextStart;
+        private Label label4;
     }
 }

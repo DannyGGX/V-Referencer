@@ -61,6 +61,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtAuthorNoFormatting = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.rtxtInTextEnd = new System.Windows.Forms.RichTextBox();
+            this.btnCopyInTextEnd = new System.Windows.Forms.Button();
             this.panelConvertCitation.SuspendLayout();
             this.panelCitation.SuspendLayout();
             this.panelInput.SuspendLayout();
@@ -137,8 +140,11 @@
             // 
             // panelCitation
             // 
+            this.panelCitation.Controls.Add(this.btnCopyInTextEnd);
             this.panelCitation.Controls.Add(this.btnCopyInText);
+            this.panelCitation.Controls.Add(this.rtxtInTextEnd);
             this.panelCitation.Controls.Add(this.rtxtInText);
+            this.panelCitation.Controls.Add(this.label9);
             this.panelCitation.Controls.Add(this.lblInText);
             this.panelCitation.Controls.Add(this.btnCopyReference);
             this.panelCitation.Controls.Add(this.rtxtReference);
@@ -146,7 +152,7 @@
             this.panelCitation.Controls.Add(this.lblCitation);
             this.panelCitation.Location = new System.Drawing.Point(0, 844);
             this.panelCitation.Name = "panelCitation";
-            this.panelCitation.Size = new System.Drawing.Size(1326, 400);
+            this.panelCitation.Size = new System.Drawing.Size(1326, 473);
             this.panelCitation.TabIndex = 5;
             // 
             // btnCopyInText
@@ -173,9 +179,9 @@
             this.lblInText.AutoSize = true;
             this.lblInText.Location = new System.Drawing.Point(52, 225);
             this.lblInText.Name = "lblInText";
-            this.lblInText.Size = new System.Drawing.Size(89, 32);
+            this.lblInText.Size = new System.Drawing.Size(398, 32);
             this.lblInText.TabIndex = 37;
-            this.lblInText.Text = "In-text:";
+            this.lblInText.Text = "In-text (start or middle of sentence):";
             // 
             // btnCopyReference
             // 
@@ -400,11 +406,39 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Author:";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(52, 344);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(283, 32);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "In-text (end of sentence):";
+            // 
+            // rtxtInTextEnd
+            // 
+            this.rtxtInTextEnd.Location = new System.Drawing.Point(52, 379);
+            this.rtxtInTextEnd.Name = "rtxtInTextEnd";
+            this.rtxtInTextEnd.Size = new System.Drawing.Size(1026, 60);
+            this.rtxtInTextEnd.TabIndex = 15;
+            this.rtxtInTextEnd.Text = "";
+            // 
+            // btnCopyInTextEnd
+            // 
+            this.btnCopyInTextEnd.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnCopyInTextEnd.Location = new System.Drawing.Point(1086, 379);
+            this.btnCopyInTextEnd.Name = "btnCopyInTextEnd";
+            this.btnCopyInTextEnd.Size = new System.Drawing.Size(109, 60);
+            this.btnCopyInTextEnd.TabIndex = 38;
+            this.btnCopyInTextEnd.Text = "Copy";
+            this.btnCopyInTextEnd.UseVisualStyleBackColor = false;
+            this.btnCopyInTextEnd.Click += new System.EventHandler(this.btnCopyInTextEnd_Click);
+            // 
             // FormBlog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1310, 1208);
+            this.ClientSize = new System.Drawing.Size(1310, 1364);
             this.Controls.Add(this.panelInput);
             this.Controls.Add(this.panelCitation);
             this.Controls.Add(this.panelConvertCitation);
@@ -455,5 +489,8 @@
         private Button btnCreateCitiation;
         private Label lblTitleWarning;
         private Label lblAuthorWarning;
+        private RichTextBox rtxtInTextEnd;
+        private Label label9;
+        private Button btnCopyInTextEnd;
     }
 }

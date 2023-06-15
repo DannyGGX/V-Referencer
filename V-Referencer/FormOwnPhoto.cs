@@ -36,6 +36,7 @@ namespace V_Referencer
             rtxtListOfFigures.Font   = controller.NormalFont;
             rtxtReference.Font       = controller.NormalFont;
             rtxtInTextReference.Font = controller.NormalFont;
+            rtxtInTextStart.Font = controller.NormalFont;
 
             checkBoxFigureNum.Checked = true;
 
@@ -56,6 +57,8 @@ namespace V_Referencer
             rtxtFigure.Clear();
             rtxtListOfFigures.Clear();
             rtxtReference.Clear();
+            rtxtInTextReference.Clear();
+            rtxtInTextStart.Clear();
 
             name = txtYourName.Text;
             title = rtxtReferenceTitle.Text;
@@ -98,7 +101,8 @@ namespace V_Referencer
             controller.WriteFormattedText(rtxtReference, ownPhoto.referenceText.BeforeItalics, ownPhoto.referenceText.Italics, ownPhoto.referenceText.AfterItalics);
 
             // In-text
-            rtxtInTextReference.Text = ownPhoto.InTextPerson;
+            rtxtInTextReference.Text = ownPhoto.InTextPersonSentenceEnd;
+            rtxtInTextStart.Text = ownPhoto.InTextPersonSentenceStart;
         }
 
         private void checkBoxFigureNum_CheckedChanged(object sender, EventArgs e)
@@ -147,6 +151,11 @@ namespace V_Referencer
         private void btnSaveFigureNum_Click(object sender, EventArgs e)
         {
             save.SaveFigureNum((int)numericSelectFigure.Value);
+        }
+
+        private void btnCopyInTextStart_Click(object sender, EventArgs e)
+        {
+            controller.Copy(rtxtInTextStart, btnCopyInTextStart);
         }
     }
 }

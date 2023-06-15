@@ -30,6 +30,7 @@ namespace V_Referencer
             controller = new UIController();
             rtxtReference.Font = controller.NormalFont;
             rtxtInText.Font = controller.NormalFont;
+            rtxtInTextEnd.Font = controller.NormalFont;
 
             lblPublishDateWarning.Hide();
             lblTitleWarning.Hide();
@@ -92,6 +93,7 @@ namespace V_Referencer
             //Clear
             controller.ResetCopyButtons(btnCopyInText, btnCopyReference);
             rtxtInText.Clear();
+            rtxtInTextEnd.Clear();
             rtxtReference.Clear();
 
             if (txtAuthorNoFormatting.Text == "" && txtAuthorNeedsFormatting.Text == "")
@@ -127,6 +129,7 @@ namespace V_Referencer
             blog = new Blog(author, websiteName, title, url, publishDate, accessDate);
             rtxtReference.Text = blog.CreateCitation(authorNameNeedFormatting);
             rtxtInText.Text = blog.CreateInText(authorNameNeedFormatting);
+            rtxtInTextEnd.Text = blog.CreateInTextEnd(authorNameNeedFormatting);
         }
 
         private void btnCopyReference_Click(object sender, EventArgs e)
@@ -146,6 +149,11 @@ namespace V_Referencer
 
         private void dateTimePicker1_Validated(object sender, EventArgs e)
         {
+        }
+
+        private void btnCopyInTextEnd_Click(object sender, EventArgs e)
+        {
+            controller.Copy(rtxtInTextEnd, btnCopyInText);
         }
     }
 }
