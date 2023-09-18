@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace V_Referencer
 {
-    public abstract class VideoGame : Citation
+    public class VideoGame : Citation
     {
         public string Publisher { get; set; }
         public string PublishCity { get; set; }
@@ -34,6 +34,11 @@ namespace V_Referencer
         public VideoGame(string url)
         {
             webscraper = new Webscraper(url);
+        }
+
+        public VideoGame() // for null case
+        {
+
         }
 
         public virtual void ScrapeWebsite()

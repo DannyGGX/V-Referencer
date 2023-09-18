@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Selenium.Support" Version="4.10.0" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="113.0.5672.6300" />
+    <PackageReference Include="Selenium.Support" Version="4.12.4" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="117.0.5938.8800" />
   </ItemGroup>
 
   <ItemGroup>

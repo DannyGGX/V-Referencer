@@ -66,6 +66,10 @@ namespace V_Referencer
             rtxtInTextStart.Clear();
             rtxtReference.Clear();
 
+            if (videoGame == null)
+            {
+                videoGame = new VideoGame();
+            }
             CreateCitation(videoGame);
             panelCitation.Visible = true;
         }

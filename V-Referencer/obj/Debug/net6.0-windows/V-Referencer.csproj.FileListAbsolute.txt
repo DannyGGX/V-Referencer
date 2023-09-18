@@ -76,3 +76,10 @@ C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\obj\Debug\net6.0-window
 C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\obj\Debug\net6.0-windows\V-Referencer.pdb
 C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\obj\Debug\net6.0-windows\V-Referencer.genruntimeconfig.cache
 C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\obj\Debug\net6.0-windows\ref\V-Referencer.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Main\Documents\GitHub\V-Referencer\V-Referencer\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
